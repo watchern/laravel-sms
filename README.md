@@ -224,10 +224,10 @@ if (!Sms::checkCode(\request('mobile'), \request('code'))) {
 
 目前已经支持把发送记录保存到数据库，执行 `php artisan migrate` 生成  `laravel_sms_log` 表。
 
-同时在 `config/charles/sms.php` 把 `dblog` 设置为 `true`
+同时在 `config/charles/sms.php` 把 `dbLog` 设置为 `true`
 
 ```
-'dblog' => true,
+'dbLog' => true,
 ```
 
 

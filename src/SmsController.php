@@ -32,14 +32,15 @@ class SmsController extends Controller
         }
 
         if (!Sms::canSend($mobile)) {
-            return response()->json(['success' => false, 'message' => '每60秒发送一次']);
+            $message = @vsprintf(config('charles.sms.notifies.request_invalid'), config('charles.sms.interval'));
+            return response()->json(['success' => false, 'message' => $message]);
         }
 
         if (!Sms::send($mobile)) {
-            return response()->json(['success' => false, 'message' => '短信发送失败']);
+            return response()->json(['success' => false, 'message' => config('charles.sms.notifies.sms_sent_failure')]);
         }
 
-        return response()->json(['success' => true, 'message' => '短信发送成功']);
+        return response()->json(['success' => true, 'message' => config('charles.sms.notifies.sms_sent_success')]);
     }
 
     /**

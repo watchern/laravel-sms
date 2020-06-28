@@ -111,7 +111,7 @@ trait SmsTestTrait
 
 	public function testSendUseDbLog()
 	{
-		$this->app['config']->set('charles.sms.dblog', true);
+		$this->app['config']->set('charles.sms.dbLog', true);
 
 		$result = Sms::send('18988888888');
 		$this->assertTrue($result);

@@ -204,8 +204,8 @@ class Sms
 
 		$code = $this->storage->get($this->key, '');
 
-		if (empty($code) || $code->sentAt < Carbon::now()->addMinutes(-1)) {
-			return true;
+		if (empty($code) || $code->sentAt < Carbon::now()->addSecond(0 - config('charles.sms.interval'))) {
+		    return true;
 		}
 
 		return false;

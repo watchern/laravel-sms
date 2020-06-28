@@ -42,7 +42,7 @@ class DbLogger implements ShouldQueue
      */
     public function handle()
     {
-        if (!config('charles.sms.dblog')) {
+        if (!config('charles.sms.dbLog')) {
             return;
         }
         DB::table('laravel_sms_log')->insert([
