@@ -41,6 +41,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
 		if (!$this->app->routesAreCached()) {
 			$routeAttr = config('charles.sms.route', []);
+			unset($routeAttr['enable']);
 			if (config('charles.sms.enable_rate_limit')) {
 				$routeAttr['middleware'] = array_merge($routeAttr['middleware'], [config('charles.sms.rate_limit_middleware') . ':' . config('charles.sms.rate_limit_count') . ',' . config('charles.sms.rate_limit_time')]);
 			}
