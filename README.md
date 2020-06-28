@@ -2,13 +2,6 @@
 
 Laravel 贴合实际需求同时满足多种通道的短信发送组件
 
-[![Build Status](https://travis-ci.org/guojiangclub/laravel-sms.svg?branch=master)](https://travis-ci.org/guojiangclub/laravel-sms)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/badges/build.png?b=master)](https://scrutinizer-ci.com/g/guojiangclub/laravel-sms/build-status/master)
-[![Latest Stable Version](https://poser.pugx.org/charles/laravel-sms/v/stable)](https://packagist.org/packages/charles/laravel-sms)
-[![Latest Unstable Version](https://poser.pugx.org/charles/laravel-sms/v/unstable)](https://packagist.org/packages/charles/laravel-sms)
-[![License](https://poser.pugx.org/charles/laravel-sms/license)](https://packagist.org/packages/charles/laravel-sms)
 
 ## Featrue
 
