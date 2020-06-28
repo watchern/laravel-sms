@@ -46,13 +46,13 @@ return [
 
             // 默认可用的发送网关
             'gateways' => [
-                'errorlog',
+                'error-log',
             ],
         ],
 
         // 可用的网关配置
         'gateways' => [
-            'errorlog' => [
+            'error-log' => [
                 'file' => storage_path('logs/laravel-sms.log'),
             ],
 
